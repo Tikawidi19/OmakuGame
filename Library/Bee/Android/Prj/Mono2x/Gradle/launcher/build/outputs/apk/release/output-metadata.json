@@ -4,7 +4,7 @@
     "type": "APK",
     "kind": "Directory"
   },
-  "applicationId": "com.DefaultCompany.Myprojectg",
+  "applicationId": "com.DefaultCompany.OMAKU",
   "variantName": "release",
   "elements": [
     {
@@ -12,7 +12,7 @@
       "filters": [],
       "properties": [],
       "versionCode": 1,
-      "versionName": "1.0",
+      "versionName": "0.1.p",
       "enabled": true,
       "outputFile": "launcher-release.apk"
     }

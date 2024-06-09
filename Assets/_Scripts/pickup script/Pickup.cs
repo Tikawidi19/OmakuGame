@@ -16,6 +16,8 @@ public class Pickup : MonoBehaviour
             int reminder = inventoryData.AddItem(item.InventoryItem, item.Quantity);
             if (reminder == 0)
             {
+                Time.timeScale=0;
+                item.info.SetActive(true);
                 item.DestroyItem();
             } else
             {

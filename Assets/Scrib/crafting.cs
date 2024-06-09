@@ -8,6 +8,7 @@ public class crafting : MonoBehaviour
 {
     [SerializeField] GameObject finishedCanvas;
     [SerializeField] GameObject akhirCanvas;
+    [SerializeField] string level;
 
     //[SerializeField] TMP_Text finishedText;
 
@@ -31,9 +32,9 @@ public class crafting : MonoBehaviour
     //}
     private void OnTriggerEnter2D(Collider2D other)
     {
-        SceneManager.LoadScene("crafting");
+        SceneManager.LoadScene("crafting" + level);
 
-        akhirCanvas.SetActive(true);
+      //  akhirCanvas.SetActive(true);
         //Debug.Log("Crafting");
 
     }

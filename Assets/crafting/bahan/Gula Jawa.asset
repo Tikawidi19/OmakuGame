@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7ea4346e5571a34e916b0f3cbb28470, type: 3}
   m_Name: Gula Jawa
   m_EditorClassIdentifier: 
-  namabahan: ZUCCHERO
+  namabahan: Gula
   deskribsibahan: "- Memenuhi kebutuhan mineral tubuh \n- Menambah Stamina tubuh"
-  imag: {fileID: 21300000, guid: 52e17a86e0638ac429144d3fa205b484, type: 3}
+  imag: {fileID: 21300000, guid: 75c421bc4c59b9247a127cf894cba002, type: 3}

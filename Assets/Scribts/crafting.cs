@@ -15,7 +15,7 @@ public class crafting : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        Time.timeScale=0;
         if (inventory.IsInventoryFull())
         {
             SceneManager.LoadScene("crafting" + level);

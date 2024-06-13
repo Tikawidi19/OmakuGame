@@ -14,43 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   inventoryItems:
   - quantity: 1
-    item: {fileID: 11400000, guid: df77b808dea9c58469dcd747b10aa97f, type: 2}
+    item: {fileID: 11400000, guid: bd64c3b97b2e82e4cb6322ff1e79845f, type: 2}
   - quantity: 1
-    item: {fileID: 11400000, guid: ee57d93e0cf1c7f4eac7133c93f01b80, type: 2}
-  - quantity: 1
-    item: {fileID: 11400000, guid: 2be2df61a02cfae49aac8e3e013f4bf1, type: 2}
+    item: {fileID: 11400000, guid: e5139006d5c0cac4fa2c69e92221b7c6, type: 2}
   - quantity: 1
     item: {fileID: 11400000, guid: 4d9ad44347de7204b80869ffc76a229a, type: 2}
   - quantity: 1
-    item: {fileID: 11400000, guid: ad789e1151339a6438bebf37cb07c4f0, type: 2}
-  - quantity: 1
-    item: {fileID: 11400000, guid: 42f86231e9d089c498456c958d477b31, type: 2}
-  - quantity: 1
     item: {fileID: 11400000, guid: df77b808dea9c58469dcd747b10aa97f, type: 2}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  - quantity: 0
-    item: {fileID: 0}
-  <size>k__BackingField: 10
+  <size>k__BackingField: 4

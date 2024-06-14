@@ -62,10 +62,10 @@
     <Analyzer Include="C:\Users\Lenovo\.vscode\extensions\visualstudiotoolsforunity.vstuc-1.0.2\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\AimingRig\AimReticle.cs" />
+    <Compile Include="Assets\Prefebs\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\AimingRig\AimReticle.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Assets\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\AimingRig\AimingRig.asmdef" />
+    <None Include="Assets\Prefebs\Samples\Cinemachine\2.8.9\Cinemachine Example Scenes\Scenes\AimingRig\AimingRig.asmdef" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

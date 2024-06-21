@@ -29,6 +29,6 @@ public class crafting : MonoBehaviour
     }
      public void nextlevel()
     {
-        SceneManager.LoadScene("LEVEL2");
+        SceneManager.LoadScene("LEVEL" + level);
     }
 }

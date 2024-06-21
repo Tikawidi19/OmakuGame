@@ -55,7 +55,7 @@ public class Pickup : MonoBehaviour
         currentItem = null; // Reset currentItem setelah menampilkan info
     }
 
-    private void PauseGame()
+    public void PauseGame()
     {
         foreach (GameObject obj in objectsToDisable)
         {

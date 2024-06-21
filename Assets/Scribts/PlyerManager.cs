@@ -51,9 +51,11 @@ public class PlyerManager : MonoBehaviour
                 Debug.Log("tombol aktif");
             }
         }else {
+            Time.timeScale = 1;
         Debug.Log("mati");
           if (isGrounded && Input.touchCount == 1)
         {
+            
             Debug.Log("touch");
             // Loop melalui semua sentuhan yang terjadi pada saat ini
             for (int i = 0; i < Input.touchCount; i++)
@@ -105,11 +107,11 @@ public class PlyerManager : MonoBehaviour
         animator= GetComponent<Animator>();
         
         rb = GetComponent<Rigidbody2D>();
-         if (AwalCanvas==true)
-        {
-            Time.timeScale = 0;
-            Debug.Log("d");
-        }
+        //  if (AwalCanvas==true)
+        // {
+        //     Time.timeScale = 0;
+        //     Debug.Log("d");
+        // }
     }
        
 

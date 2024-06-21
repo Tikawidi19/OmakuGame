@@ -7,15 +7,13 @@ public class NextLevel : MonoBehaviour
 {
     public void Pass()
     {
-            
-            if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
+                  if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
                 {
-                    PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex+1);
-                    PlayerPrefs.SetInt("Unlockedss", PlayerPrefs.GetInt("Unlockedss",1) + 1);
+                    PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
+                    PlayerPrefs.SetInt("Unlockeds", PlayerPrefs.GetInt("Unlockedss", 1) + 1);
                     PlayerPrefs.Save();
                     
                 }SceneManager.LoadScene("LevelStage");
-        Debug.Log("LEVEL" + PlayerPrefs.GetInt("Unlockedss") + " Unlocked");
+        Debug.Log("level" + PlayerPrefs.GetInt("Unlockeds") + " Unlocked");
     }
-    
 }

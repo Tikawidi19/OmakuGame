@@ -6,67 +6,31 @@ using TMPro;
 
 public class NPC2 : MonoBehaviour
 {
-    public TextMeshProUGUI textComponent;
-    public string[] lines;
-    public float textSpeed;
-    public bool playerIsClose;
-    private int index;
-    public GameObject dialoguePanel;
+        
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        textComponent.text = string.Empty;
-        StartDialog();
-    }
 
+    //public bool playerIsClose;
+    //public GameObject button;
+public Pickup pause;
+public NPC teks;
+public GameObject colider;
     // Update is called once per frame
-    void Update()
+
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        if (Input.GetKeyDown(KeyCode.E) && playerIsClose)
-        {
-
-
-            if (textComponent.text == lines[index])
-            {
-
-                NextLine();
-                
-
-            }
-            else
-            {
-                StopAllCoroutines();
-                textComponent.text = lines[index];
-
-
-            }
-        }
+        teks.dialoguePanel.SetActive(true); 
+         pause.PauseGame();
+           
+        
     }
-    void StartDialog()
+        public void close()
     {
-        index = 0;
-        StartCoroutine(TypeLine());
-    }
-    IEnumerator TypeLine()
-    {
-        foreach (char c in lines[index].ToCharArray())
-        {
-            textComponent.text += c;
-            yield return new WaitForSeconds(textSpeed);
-        }
-    }
-    void NextLine()
-    {
-        if (index < lines.Length - 1)
-        {
-            index++;
-            textComponent.text = string.Empty;
-            StartCoroutine(TypeLine());
-        }
-        else
-        {
-            gameObject.SetActive(false);  
-        }
+        
+       pause.ResumeGame();
+       teks.dialoguePanel.SetActive(false); 
+       colider.SetActive(false);
+       
     }
 }
+
+   

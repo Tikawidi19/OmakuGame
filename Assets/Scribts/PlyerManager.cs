@@ -24,7 +24,7 @@ public class PlyerManager : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-    [SerializeField] AudioSource audioManager;
+   // [SerializeField] AudioSource audioManager;
     private bool isGrounded;
 
 
@@ -100,7 +100,7 @@ public class PlyerManager : MonoBehaviour
 
     private void Start()
     {
-        audioManager.Play();
+//        audioManager.Play();
         AwalCanvas.SetActive(true);
         inventory.ResetInventory();
         tombolLanjut.gameObject.SetActive(false);

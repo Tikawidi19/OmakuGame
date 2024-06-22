@@ -373,6 +373,8 @@
 -r:"Library/Bee/artifacts/1300b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1300b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/audio.cs"
+"Assets/AUDIOSETTING.cs"
 "Assets/buttonManager.cs"
 "Assets/crafting/bahan/NewBehaviourScript.cs"
 "Assets/crafting/craftingmanager.cs"
@@ -387,6 +389,7 @@
 "Assets/crafting/scoreManager.cs"
 "Assets/crafting/slot.cs"
 "Assets/crafting/TOMBOL.cs"
+"Assets/levelMenu.cs"
 "Assets/Prefebs/PlayerCollision.cs"
 "Assets/Prefebs/PlayerControls.cs"
 "Assets/Prefebs/Samples/Cinemachine/2.8.9/Cinemachine Example Scenes/Scenes/2D/LoseSightWhenTargetsFallsOffThePlatform.cs"
@@ -439,7 +442,6 @@
 "Assets/Scribts/NextLevel.cs"
 "Assets/Scribts/NPC.cs"
 "Assets/Scribts/NPC2.cs"
-"Assets/Scribts/pause.cs"
 "Assets/Scribts/Player.cs"
 "Assets/Scribts/playercollisor.cs"
 "Assets/Scribts/PlyerManager.cs"
@@ -458,6 +460,7 @@
 "Assets/Scribts/_Scripts inventory/UIInventoryDescription.cs"
 "Assets/Scribts/_Scripts inventory/UIInventoryItem.cs"
 "Assets/Scribts/_Scripts inventory/UIInventoryPage.cs"
+"Assets/SoundManager.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs"
@@ -492,6 +495,8 @@
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs"
 "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs"
+"Assets/UnlockedLevel.cs"
+"Assets/VolumeController.cs"
 -langversion:9.0
 
 /deterministic

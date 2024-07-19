@@ -10,10 +10,10 @@ public class NextLevel : MonoBehaviour
                   if(SceneManager.GetActiveScene().buildIndex >= PlayerPrefs.GetInt("ReachedIndex"))
                 {
                     PlayerPrefs.SetInt("ReachedIndex", SceneManager.GetActiveScene().buildIndex + 1);
-                    PlayerPrefs.SetInt("Unlockeds", PlayerPrefs.GetInt("Unlockedss", 1) + 1);
+                    PlayerPrefs.SetInt("Open", PlayerPrefs.GetInt("Open", 1) + 1);
                     PlayerPrefs.Save();
                     
                 }SceneManager.LoadScene("LevelStage");
-        Debug.Log("level" + PlayerPrefs.GetInt("Unlockeds") + " Unlocked");
+        Debug.Log("level" + PlayerPrefs.GetInt("Open") + " UnlockedNext");
     }
 }

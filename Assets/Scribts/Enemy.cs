@@ -17,8 +17,6 @@ public class Enemy : MonoBehaviour
             if (healty.maxhealth <= 0)
             {
                 GameOver.SetActive(true);
-                
-                //audio.Play();
                 AudioManager.instance.Play("GameOver");
                 gameObject.SetActive(false);
                 BGM.Pause();
@@ -28,21 +26,7 @@ public class Enemy : MonoBehaviour
                 StartCoroutine(GetHurt());
             }
         }
-        //if (collision.transform.tag == "Enemy2")
-        //{
-        //    healty.maxhealth=-3;
-        //    if (healty.maxhealth <= 0)
-        //    {
-        //        GameOver.SetActive(true);
-        //        //PlyerManager.isGameOver = true;
-        //        //AudioManager.instance.Play("GameOver");
-        //        gameObject.SetActive(false);
-        //    }
-        //    else
-        //    {
-        //        StartCoroutine(GetHurt());
-        //    }
-        //}
+
     }
     IEnumerator GetHurt()
     {

@@ -52,15 +52,15 @@
 31            android:name="com.unity3d.player.UnityPlayerActivity"
 31-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:15-68
 32            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|fontScale|layoutDirection|density"
-32-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:188-369
+32-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:181-362
 33            android:hardwareAccelerated="false"
-33-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:405-440
+33-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:398-433
 34            android:launchMode="singleTask"
-34-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:156-187
+34-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:149-180
 35            android:resizeableActivity="false"
-35-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:370-404
-36            android:screenOrientation="reverseLandscape"
-36-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-155
+35-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:363-397
+36            android:screenOrientation="landscape"
+36-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:111-148
 37            android:theme="@style/UnityThemeSelector" >
 37-->D:\V-S_ Omaku\OmakuGame\Library\Bee\Android\Prj\IL2CPP\Gradle\unityLibrary\src\main\AndroidManifest.xml:4:69-110
 38            <intent-filter>

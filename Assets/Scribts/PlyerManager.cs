@@ -24,7 +24,7 @@ public class PlyerManager : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
-   // [SerializeField] AudioSource audioManager;
+
     private bool isGrounded;
 
 
@@ -40,28 +40,27 @@ public class PlyerManager : MonoBehaviour
     void Update()
     {
         
-        if (AwalCanvas.activeSelf == true)
+        if (AwalCanvas.activeSelf == true)// jika variabel awalCanvas hidup
         {
-            Debug.Log("hidup");
-            Time.timeScale = 0;
-            if (!audiotutorial.isPlaying && audiotutorial.time > 0)
+            //Debug.Log("hidup");
+            Time.timeScale = 0; // pause
+            if (!audiotutorial.isPlaying && audiotutorial.time > 0) //jika audio tidak sedang berjalan dan waktu audio lebih dari 0
             {
                 // Aktifkan tombol
                 tombolLanjut.gameObject.SetActive(true);
-                Debug.Log("tombol aktif");
+               // Debug.Log("tombol aktif");
             }
         }else {
             Time.timeScale = 1;
-        Debug.Log("mati");
-          if (isGrounded && Input.touchCount == 1)
-        {
-            
-            Debug.Log("touch");
+        //Debug.Log("mati");
+        if (isGrounded && Input.touchCount == 1) // apakah player penyentuh platform dan apakah ada sentuhan
+        {      
+           // Debug.Log("touch");
             // Loop melalui semua sentuhan yang terjadi pada saat ini
             for (int i = 0; i < Input.touchCount; i++)
             {
                 // Jika sentuhan tersebut baru saja dimulai (tap)
-                if (Input.GetTouch(i).phase == TouchPhase.Began)
+                if (Input.GetTouch(i).phase == TouchPhase.Began) // manggil klas jump jika ada sentuhan untuk pertama kali
                 {
                     Jump();
                     
@@ -69,7 +68,7 @@ public class PlyerManager : MonoBehaviour
                 }
             }
         }  
-        animator.SetBool("isJumping", !isGrounded);
+        animator.SetBool("isJumping", !isGrounded); //manggil animasi
         animator.SetBool("isRun", isGrounded && rb.velocity.x != 0);
      }
          
@@ -77,12 +76,7 @@ public class PlyerManager : MonoBehaviour
     }
     void Jump()
     {
-
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
-            
-            
-        
-        
     }
 
     private void FixedUpdate()
@@ -92,26 +86,20 @@ public class PlyerManager : MonoBehaviour
             rb.velocity = new Vector2(speed, rb.velocity.y);
             isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheckRadius, groundLayer);
             
-            
-            
         }
 
     }
 
     private void Start()
     {
-//        audioManager.Play();
+
         AwalCanvas.SetActive(true);
         inventory.ResetInventory();
         tombolLanjut.gameObject.SetActive(false);
         animator= GetComponent<Animator>();
         
         rb = GetComponent<Rigidbody2D>();
-        //  if (AwalCanvas==true)
-        // {
-        //     Time.timeScale = 0;
-        //     Debug.Log("d");
-        // }
+
     }
        
 
